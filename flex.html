@@ -7,13 +7,7 @@
 	<title>Document</title>
 	<style>
 
-				html {
-				box-sizing: border-box;
-				}
-				*, *::before, *::after {
-				box-sizing: inherit;
-				}
-
+		
 	          .container {
 	           display: flex;
 	           border: 1px solid #999;
@@ -88,7 +82,7 @@
 	           }
 
 	           .label__search{
-	               padding: 2px 5px 2px 2px;
+	               padding: 5px;
 	           }
 
                .tool__shopping__user{
@@ -98,6 +92,19 @@
                  display: flex;
                  justify-content: flex-end;
                }
+
+			   .footer__pagination{
+				 height: 100%;
+	             border: 1px solid #999; 
+	             margin-bottom: 10px;  
+				 padding: 10px;
+				 display: flex;
+				 justify-content: center;
+			   }
+
+			   .pagination {
+				   border: 1px solid #999;
+			   }
 	</style>
 </head>
 <body>
@@ -120,7 +127,7 @@
         </div>
 
 		<div class="search__area">
-			<label class="label__search" for="">Name of product</label> <input id="name_product" name="name_product" style="width: 400px;height: 20px;" type="text">
+			<label class="label__search" for="">Name of product</label> <input id="name_product" name="name_product" style="width: 400px;height: 30px;" type="text">
 		</div>
 		<div class="body-content">
 			<div class="first-container">
@@ -295,6 +302,16 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="footer__pagination">
+            <div class="pagination">
+					<span><</span>
+					<span>1 2 3 4 5 6</span>
+					<span>></span>
+            </div>           
+        </div>
+
+
 	</div>
 </body>
 </html>
